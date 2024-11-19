@@ -1,0 +1,22 @@
+/* Add to src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Ensure proper demo container behavior */
+:root {
+  --aspect-ratio-height: calc(100vw * (9 / 16));
+}
+
+#root {
+  max-height: var(--aspect-ratio-height);
+}
+
+/* Optional: Add smooth transitions */
+.shadow-2xl {
+  transition: transform 0.2s ease-in-out;
+}
+
+.shadow-2xl:hover {
+  transform: translateY(-2px);
+}
